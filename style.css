@@ -1,0 +1,200 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400&display=swap');
+/* DOCUMENT RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button, textarea, input {
+    font: inherit;
+}
+
+
+/* VARIABLES */
+:root {
+    --primary-color: #2626ff;
+    --secondary-color: black;
+    --gradient: linear-gradient(red, green);
+
+    --ff: 'League Spartan', sans-serif;
+
+    --fs-900: clamp(2rem, 5vw, 5rem);
+    --fs-100: clamp(1rem, 2vw, 2rem);
+}
+
+
+/* UTILITY CLASSES */
+
+.container {
+    width: min(1200px, 90%);
+    margin-inline: auto;
+}
+
+h1 {
+    font-size: var(--fs-900);
+    font-weight: 900;
+}
+
+p {
+    font-size: var(--fs-100);
+    
+}
+
+.primary-button {
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    color: white;
+}
+
+.secondary-button {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    color: var(--secondary-color);
+}
+
+
+
+
+/* GENERAL STYLES */
+.header__nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: white;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.logo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.logo ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo li {
+    list-style: none;
+}
+
+.logo a {
+    font-weight: 100;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.hero__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.hero__section span {
+    color: var(--primary-color);
+    
+}
+
+.todo-list {
+    padding: 2rem;
+    width: min(600px, 70%);
+    margin-inline: auto;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+} 
+
+.todo-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.todo-list input {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 0.5rem;
+    width: 90%;
+    margin-block: 1rem;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fa-plus {
+    color: white;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+
+}
+
+h3 {
+    margin-block: 1rem;
+}
+
+.todo-list li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-trash {
+    color: white;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* @media (max-width:50em;){
+    
+.todo-list {
+    padding: 2rem;
+    width: 100%;
+} 
+} */
+
+
+
+
+
+
